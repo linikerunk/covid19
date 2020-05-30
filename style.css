@@ -34,3 +34,55 @@ p.informativo {
 hr.linha-point{
     box-shadow: 3px 1px white;
 }
+
+.titulo-card {
+    font-size : 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.mensagem-card {
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+}
+
+
+.titulo-card-success{
+    text-align: center;
+    font-size : 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.mensagem-card-success {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+p.h4 > a {
+    color: #F5F5F5;
+    text-align: center;
+}
+
+p.h4 > a#link-negativo {
+    color: red;
+    text-align: center;
+}
+
+.imagem-block{
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #fff;
+}
+
+#sucesso-entrada{
+    font-weight: bold;
+    font-size: 40px;
+    color:  rgb(3, 85, 3);
+}
+

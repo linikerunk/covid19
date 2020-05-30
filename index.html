@@ -27,11 +27,11 @@
             </div>
             </div>
         
-                    <div class="col-sm-12 pt-1 pl-5 ">
+                    <div class="col-sm-12 pt-1 pl-5 " id="texto-cabecalho">
                         <p> <strong> PRECHECK </strong></p>
-                        <p class="lead pb-3">Para que o seu acesso às instalações da GM seja permitido, será solicitado que estas perguntas sejam
-                            respondidas
-                            diariamente. Nenhum dado pessoal será coletado ou armazenado. </p>
+                        <p class="lead pb-3">Para que o seu acesso às instalações da Avery Dennison seja permitido, será solicitado que estas perguntas sejam
+                        respondidas
+                        diariamente. Nenhum dado pessoal será coletado ou armazenado.</p>
                     </div>
             
         </div>
@@ -41,7 +41,8 @@
 <div class="row">
     <div class="col-md-12 pt-3">
         <p class="informativo">Responda às perguntas a seguir com informações verdadeiras. Estas perguntas estão desenhadas para proteger você, seus
-        amigos e seus colegas de trabalho, suas famílias, a comunidade e os negócios da GM. A falha em responder com sinceridade
+        amigos e seus colegas de trabalho, suas famílias, a comunidade e os negócios da Avery Dennison. A falha em responder com
+        sinceridade
         a estas perguntas pode sujeitar o empregado a medidas disciplinares e às penas da lei.</p>
     </div>
 </div>
@@ -50,12 +51,12 @@
     <div class="col-md-12">
         <hr class="linha-point">
         <p class="informativo">Você teve contato próximo ou cuidou de alguém diagnosticado com COVID-19 nos últimos 14 dias?<br></p>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Sim
+        <div class="btn-group btn-group-toggle">
+            <label class="btn btn-primary" id="options-1">
+            <input type="radio" name="options-1" id="input-1"  value="1"> Sim
             </label>
-            <label class="btn btn-primary active">
-                <input type="radio" name="options" id="option2" autocomplete="off"> Não
+            <label class="btn btn-primary" id="options-2">
+            <input type="radio" name="options-2" id="input-2" value="0"> Não
             </label>
         </div>
         <hr class="linha-point">
@@ -65,12 +66,12 @@
 <div class="row">
     <div class="col-md-12">
         <p class="informativo">Você fez alguma viagem nacional ou internacional de avião ou cruzeiro marítimo nos últimos 14 dias?<br></p>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary ">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Sim
+        <div class="btn-group btn-group-toggle">
+            <label class="btn btn-primary" id="options-3">
+            <input type="radio" name="options-3" id="input-3" value="1"> Sim
             </label>
-            <label class="btn btn-primary active">
-                <input type="radio" name="options" id="option2" autocomplete="off"> Não
+            <label class="btn btn-primary" id="options-4">
+            <input type="radio" name="options-4" id="input-4" value="0"> Não
             </label>
         </div>
         <hr class="linha-point">
@@ -81,12 +82,12 @@
     <div class="col-md-12">
         <p class="informativo">Febre (maior ou igual a 37,5ºC), calafrios, tosse, dificuldade para respirar, dor de cabeça, dor de garganta, dor no
         corpo, diarreia, náusea, conjuntivite, perda de olfato ou paladar? <br></p>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary active">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Sim
+        <div class="btn-group btn-group-toggle">
+            <label class="btn btn-primary" id="options-5">
+            <input type="radio" name="options-5" id="input-5" value="1"> Sim
             </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="option2" autocomplete="off"> Não
+            <label class="btn btn-primary" id="options-6">
+            <input type="radio" name="options-6" id="input-6" value="0"> Não
             </label>
         </div>
         <hr class="linha-point">
@@ -96,7 +97,44 @@
 </div>
 
 <div class="container p-3">
-<button type="button" class="btn btn-primary btn-lg btn-block">Clique aqui para enviar</button>
+<button type="button" class="btn btn-primary btn-lg btn-block" id="enviar">Clique aqui para enviar</button>
+</div>
+
+
+ <div class="jumbotron mb-5 mt-3 m-2" id="informativo-error" style="max-width: 100rem;  height: 500px;">
+    <h2 style="text-align: center;"><span style="color: #fa4d4d">Entrada não autorizada</span></h2>
+    
+    <div class="imagem-block m-5">
+    <img src="assets\img\minus.jpg" alt="negativo" width="80" height='80'>
+    </div>
+
+    <h4 style="text-align: center; color: #fa4d4d">Informe o seu líder direto e o
+    Serviço Médico.<br>Ligue para
+        <p></p>
+        <div class="date_item"><a href="tel:08008924301" style="color: black !important;">0800 892 4301</a></div>
+    </h4>
+    
+    <p class="h5" style="text-align: center;"><a style="text-decoration: none; color: #696969" href="index.html"> Retornar para o formulário.</a></p>
+</div>
+
+
+<div class="jumbotron mb-5 mt-3 m-2" id="informativo-sucesso" style="max-width: 100rem;  height: 500px;">
+<h2 style="text-align: center;"><span id="sucesso-entrada">Entrada</span></h2>
+    <div class="imagem-block m-5">
+        <img src="assets\img\correct.png" alt="negativo" width="80" height='80'>
+    </div>
+<h4 style="text-align: center; color: rgb(3, 85, 3)">
+    <p>Apresente esta tela para entrar<br>Atualizado em</p><span id="dia"></span><br><span id="data-completa"></span>
+    <div class="date_item"></div>
+</h4>
+
+<p class="h5" style="text-align: center;"><a style="text-decoration: none; color: #696969" href="index.html"> Retornar
+        para o formulário.</a></p>
+
+</div> 
+
+<div>
+    
 </div>
 
 </body>
@@ -104,4 +142,98 @@
 <script src="libs\jquery\jquery-3.4.1.slim.min.js"></script>
 <script src="libs\jquery\jquery.slim.min.js"></script>
 <script src="libs\jquery\popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+
 </html>
+
+<script>
+// hide box
+    $('#informativo-sucesso').hide()
+    $('#informativo-error').hide()
+// animações jQuery
+    $(".imagem-logo").hide();
+    $(".imagem-logo").fadeIn(3000);
+
+    $("#texto-cabecalho").hide();
+    $("#texto-cabecalho").slideToggle(3000);
+
+// options 1
+   $("#options-1").click(() =>{
+       $("#options-1").addClass("active")
+       $("#input-1").prop('checked', true);
+
+       $("#options-2").removeClass("active")
+       $("#input-2").prop('checked', false);
+   })
+
+//    options 2
+    $("#options-2").click(() => {
+        $("#options-2").addClass("active")
+        $("#input-2").prop('checked', true);
+
+        $("#options-1").removeClass("active")
+        $("#input-1").prop('checked', false);
+    })
+
+// options 3
+    $("#options-3").click(() => {
+        $("#options-3").addClass("active")
+        $("#input-3").prop('checked', true);
+
+        $("#options-4").removeClass("active")
+        $("#input-4").prop('checked', false);
+    })
+
+// options 4
+    $("#options-4").click(() => {
+        $("#options-4").addClass("active")
+        $("#input-4").prop('checked', true);
+
+        $("#options-3").removeClass("active")
+        $("#input-3").prop('checked', false);
+    })
+
+// options 5
+    $("#options-5").click(() => {
+        $("#options-5").addClass("active")
+        $("#input-5").prop('checked', true);
+
+        $("#options-6").removeClass("active")
+        $("#input-6").prop('checked', false);
+    })
+
+// options 6
+    $("#options-6").click(() => {
+        $("#options-6").addClass("active")
+        $("#input-6").prop('checked', true);
+
+        $("#options-5").removeClass("active")
+        $("#input-5").prop('checked', false);
+    })
+
+// fazendo o modal 
+$("#enviar").click( () => {
+    if(!($("#input-1").is(':checked')) && !($("#input-2").is(':checked')) && !($("#input-3").is(':checked')) && !($("#input-4").is(':checked')) && !($("#input-5").is(':checked')) && !($("#input-6").is(':checked')) ){
+        alert("Você precisa preencher os campos primeiro.")
+        return 0;
+    }
+    if(!($("#input-1").is(':checked') || $("#input-3").is(':checked') || $("#input-5").is(':checked'))){
+        $(".container").html('');
+        $('#informativo-sucesso').show()
+    }else{
+        $(".container").html('');
+        $('#informativo-error').show()
+    }
+})
+
+</script>
+
+<script>
+    const verifica_dia = new Date().getDay();
+    const verifica_data = new Date()
+    const data_dia = ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado']
+    $('#dia').html(`<h3><strong>${data_dia[verifica_dia]}</strong></h3>`)
+    console.log(data_dia[verifica_dia])
+    $('#data-completa').html(`<h4><strong>${moment(verifica_data).format("DD/MM/YYYY HH:mm:ss")}</strong></h3>`)
+</script>
